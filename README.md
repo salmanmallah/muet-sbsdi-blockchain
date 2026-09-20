@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/sindh_hec_logo.jpeg" alt="Sindh Higher Education Commission Logo" width="120" height="120">
+  <img src="assets/sindh_hec_logo.svg" alt="Sindh Higher Education Commission Logo" width="120" height="120">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/muet_logo.svg" alt="MUET Jamshoro Logo" width="120" height="120">
 </p>

@@ -4,6 +4,7 @@
 	 xml:space="preserve">
 		<switch>
 			<g>
+				<circle cx="92.803" cy="92.803" r="92.8" fill="#FFFFFF" />
 				<g>
 					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#99D9E8" points="115.909,82.88 124.45,83.625 
 						124.45,90.447 116.771,90.178 116.056,90.188 115.159,92.898 125.815,93.143 125.813,82.801 115.646,82.393 "/>
