@@ -9,6 +9,7 @@
 [![University](https://img.shields.io/badge/Institution-MUET%20Jamshoro-0056b3.svg)](https://www.muet.edu.pk/)
 [![Initiative](https://img.shields.io/badge/Program-SBSDI%20Sindh-28a745.svg)](#)
 [![Status](https://img.shields.io/badge/Status-Under%20Active%20Development-orange.svg)](#)
+[![PyPI](https://img.shields.io/badge/PyPI-Publishing%20Soon-yellow.svg)](#)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/Tests-19%2F19%20Passing-brightgreen.svg)](#)
@@ -17,42 +18,65 @@
 
 ## 🏛️ Overview
 
-The **MUET SBSDI Blockchain Package** is a scalable, production-ready Python library designed for undergraduate coursework, practical laboratory experiments, and research under the **Sindh Blockchain Skills Development Initiative (SBSDI)** at **Mehran University of Engineering & Technology (MUET), Jamshoro**.
+The **MUET SBSDI Blockchain Package** is a scalable, production-grade Python library designed for undergraduate coursework, laboratory instruction, and hands-on experiments under the **Sindh Blockchain Skills Development Initiative (SBSDI)** at **Mehran University of Engineering & Technology (MUET), Jamshoro**.
 
 > [!IMPORTANT]
-> **Active Development Notice:** This package is currently **under active development**. Modules and interfaces are continuously updated and expanded as additional laboratory exercises and advanced blockchain components are introduced.
+> **Active Development & PyPI Roadmap:**  
+> * **Active Development:** This package is continuously updated as new laboratory modules and blockchain algorithms are introduced.  
+> * **PyPI Release:** The package will soon be published to the official Python Package Index (PyPI) for direct `pip install` access. Currently, students and researchers can install and use it directly via GitHub as shown below.
 
-### Key Capabilities & Highlights
+### Key Highlights
 * **Zero Dependency Conflicts:** Standardizes cryptographic primitives (`secp256k1` curves and Keccak-256) into a unified, conflict-free dependency set.
-* **Modular & Scalable Design:** Easily extensible codebase organized by independent modules, allowing new algorithms and lab components to be added seamlessly.
-* **Verified Reference Implementations:** 100% automated test-passing reference implementations for distributed ledgers, peer-to-peer networks, cryptographic hashing, and consensus protocols.
+* **Modular & Scalable Design:** Organized into independent modules, allowing new consensus algorithms, cryptographic tools, and lab exercises to be added seamlessly.
+* **100% Verified Reference Implementations:** All modules are thoroughly tested with automated verification for distributed ledgers, P2P networking, hashing, and consensus protocols.
 
 ---
 
-## 📦 Installation
+## 🚀 Quickstart Guide for Students
 
-Install the package directly in editable mode for development or via standard pip:
+Follow these simple steps to install and start using the package in your Python scripts or Jupyter Notebooks.
 
+### Step 1: Install the Package
+
+You can install the package directly into your Python environment using either of the two methods below:
+
+#### Option A: Direct One-Line Install from GitHub (Recommended)
 ```bash
-# Clone the repository
+pip install git+https://github.com/salmanmallah/muet-sbsdi-blockchain.git
+```
+
+#### Option B: Clone for Local Development (Editable Mode)
+```bash
+# 1. Clone the repository
 git clone https://github.com/salmanmallah/muet-sbsdi-blockchain.git
 cd muet-sbsdi-blockchain
 
-# Install in editable mode with dependencies
+# 2. Install in editable mode (auto-installs all required dependencies)
 pip install -e .
 ```
 
-### Core Dependencies
-This package automatically installs and manages the following verified dependencies:
-* `ecdsa>=0.18` — For SECP256k1 key generation, digital signatures, and verification.
-* `pycryptodome>=3.15` — For Ethereum-compatible Keccak-256 cryptographic hashing.
-
-> [!NOTE]
-> If you have the legacy `pycrypto` library installed, please uninstall it first using `pip uninstall pycrypto` to avoid namespace collisions.
+*(Note: Once published to PyPI, you will be able to simply run `pip install muet-sbsdi-blockchain`)*
 
 ---
 
-## 🔬 Practical Lab Modules & Examples
+### Step 2: Create Your Python Script or Notebook
+
+Create a new file (e.g., `main.py` or a Jupyter notebook `experiment.ipynb`) and import the required modules directly into your project!
+
+```python
+# Example: Create and mine your first blockchain block
+from sbsdi_blockchain.lab1 import Blockchain
+
+my_blockchain = Blockchain()
+my_blockchain.add_block(data="Transfer 10 MUET-Coins to Student A", difficulty=4)
+
+print("Block Successfully Mined!")
+print("Chain Valid:", my_blockchain.is_chain_valid())
+```
+
+---
+
+## 🔬 Practical Lab Modules & Code Examples
 
 ### Module 1: Blockchain Fundamentals & Proof-of-Work
 *Covers block data structures, SHA-256 cryptographic chaining, block tampering detection, and proof-of-work difficulty benchmarking.*
@@ -60,19 +84,19 @@ This package automatically installs and manages the following verified dependenc
 ```python
 from sbsdi_blockchain.lab1 import Block, Blockchain, time_mining
 
-# Initialize blockchain
+# 1. Initialize blockchain and add mined blocks
 chain = Blockchain()
 chain.add_block("Alice transfers 5 coins to Bob", difficulty=4)
 chain.add_block("Bob transfers 2 coins to Carol", difficulty=4)
 
-# Validate chain integrity
+# 2. Validate chain integrity
 print(f"Chain Valid: {chain.is_chain_valid()}")  # True
 
-# Tamper simulation
+# 3. Tamper simulation (tampering invalidates the cryptographic chain)
 chain.chain[1].data = "Alice transfers 5000 coins to Bob"
 print(f"Tampered Chain Valid: {chain.is_chain_valid()}")  # False
 
-# Benchmark mining execution time across difficulties
+# 4. Benchmark mining execution time across difficulties
 elapsed = time_mining(Blockchain(), "Benchmark Block", difficulty=4)
 print(f"Mining elapsed time: {elapsed:.3f}s")
 ```
@@ -91,23 +115,25 @@ from sbsdi_blockchain.lab2 import (
     Blockchain
 )
 
-# 1. Distributed Ledger Consistency
+# 1. Distributed Ledger Consistency & Sync
 network = DistributedLedgerNetwork(["Node_A", "Node_B", "Node_C"])
 network.broadcast_entry({"tx": "Alice sends 10"}, origin_node="Node_A")
 print(f"Network Consistent: {network.is_consistent()}")  # True
 
-# 2. P2P Gossip Protocol Simulation
+# 2. P2P Gossip Protocol Simulation (8-node ring topology)
 nodes = build_ring(8)
 nodes[0].broadcast("New block announced!")
 print(f"Gossip Delivered to All: {all(len(n.inbox) == 1 for n in nodes)}")  # True
 
-# 3. Wallets, Signed Transactions & Mempool
+# 3. Cryptographic Wallets & Signed Transactions
 alice = Wallet("Alice")
 bob = Wallet("Bob")
 
+# Alice signs transaction with ECDSA private key
 tx = Transaction(alice, bob.address(), amount=10.0, fee=0.5)
 tx.sign()
 
+# Submit to blockchain mempool and mine
 bc = Blockchain(difficulty=4, genesis_grants={alice.address(): 100})
 bc.submit_transaction(tx)
 bc.mine_pending_transactions()
@@ -135,13 +161,13 @@ from sbsdi_blockchain.lab3 import (
 print("SHA-256:", sha256(b"MUET SBSDI"))
 print("Keccak-256:", keccak256(b"MUET SBSDI"))
 
-# 2. Key Generation & Digital Signatures
+# 2. Key Generation & Digital Signatures (secp256k1)
 priv, pub = generate_keypair()
 msg = b"Transfer 50 ETH to Research Pool"
 sig = sign(priv, msg)
 print(f"Signature Valid: {verify(pub, sig, msg)}")  # True
 
-# 3. Ethereum Address Derivation
+# 3. Ethereum Address Derivation (Keccak-256 of uncompressed public key)
 eth_address = derive_eth_address(pub)
 print(f"Derived Address: {eth_address}")
 
@@ -173,7 +199,7 @@ from sbsdi_blockchain.lab4 import (
     sharded_tps
 )
 
-# 1. Proof of Stake & Slashing
+# 1. Proof of Stake & Validator Slashing
 validators = [
     Validator("MUET_Pool_A", stake=300),
     Validator("MUET_Pool_B", stake=200),
@@ -185,8 +211,8 @@ print(f"Elected Block Proposer: {leader.name}")
 slash(validators[0], penalty=0.5)
 print(f"Slashed State: {validators[0].slashed}, New Stake: {validators[0].stake}")
 
-# 2. PBFT Consensus (3-Phase Simulation)
-# n=7, f=2 Byzantine faults tolerated, quorum=5
+# 2. PBFT Consensus Simulation (3-Phase: Pre-prepare, Prepare, Commit)
+# Network of 7 nodes, tolerating f=2 Byzantine faulty nodes (Quorum = 5)
 nodes = build_network(7, num_byzantine=2)
 result = pbft_consensus(nodes, "COMMIT_BLOCK_42")
 print(f"PBFT Consensus Reached: {result['consensus_reached']}")
