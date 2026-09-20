@@ -1,10 +1,13 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 width="185.606" height="185.606" viewBox="0 0 185.606 185.606" overflow="visible" enable-background="new 0 0 185.606 185.606"
-	 xml:space="preserve">
-		<switch>
-			<g>
-				<rect x="0" y="0" width="185.606" height="185.606" rx="16" ry="16" fill="#FFFFFF" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Solid White Square Card Background with slight rounded corners -->
+  <rect x="0" y="0" width="240" height="240" rx="16" ry="16" fill="#FFFFFF" />
+  
+  <!-- Centered MUET Logo (185x185 centered in 240x240 -> offset by ~27) -->
+  <g transform="translate(27, 27)">
+    <switch>
+      <g>
+				
 				<g>
 					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#99D9E8" points="115.909,82.88 124.45,83.625 
 						124.45,90.447 116.771,90.178 116.056,90.188 115.159,92.898 125.815,93.143 125.813,82.801 115.646,82.393 "/>
@@ -1241,5 +1244,6 @@
 						l-4.719,0.007v-1.977h0.496c0.416,0,0.979,0.32,1.238,0.493L110.946,81.028z"/>
 				</g>
 			</g>
-		</switch>
-	</svg>
+    </switch>
+  </g>
+</svg>
