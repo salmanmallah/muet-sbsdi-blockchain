@@ -12,7 +12,7 @@
 [![PyPI](https://img.shields.io/badge/PyPI-Publishing%20Soon-yellow.svg)](#)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/Tests-19%2F19%20Passing-brightgreen.svg)](#)
+[![CI Test Suite](https://github.com/salmanmallah/muet-sbsdi-blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/salmanmallah/muet-sbsdi-blockchain/actions)
 
 ---
 

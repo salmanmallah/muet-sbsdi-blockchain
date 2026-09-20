@@ -36,7 +36,7 @@ class Block:
         self.index = index
         self.prev_hash = prev_hash
         self.transactions = transactions
-        self.merkle_root = MerkleTree(transactions).merkle_root if transactions else sha256d(b"").hex()
+        self.merkle_root = MerkleTree(transactions).root() if transactions else sha256d(b"").hex()
         self.timestamp = int(time.time())
         self.nonce = 0
         self.difficulty = difficulty
