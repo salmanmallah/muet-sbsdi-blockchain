@@ -1,6 +1,6 @@
-# ⛓️ MUET SBSDI Blockchain Framework
+# ⛓️ MUET SBSDI Blockchain Package
 
-**Official Python Blockchain Reference Framework & Laboratory Implementations**  
+**Official Scalable Python Blockchain Package & Laboratory Implementations**  
 *Mehran University of Engineering & Technology (MUET), Jamshoro*  
 *Sindh Blockchain Skills Development Initiative (SBSDI) — Sindh Higher Education Commission (SHEC)*
 
@@ -8,6 +8,7 @@
 
 [![University](https://img.shields.io/badge/Institution-MUET%20Jamshoro-0056b3.svg)](https://www.muet.edu.pk/)
 [![Initiative](https://img.shields.io/badge/Program-SBSDI%20Sindh-28a745.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Under%20Active%20Development-orange.svg)](#)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/Tests-19%2F19%20Passing-brightgreen.svg)](#)
@@ -16,12 +17,15 @@
 
 ## 🏛️ Overview
 
-The **MUET SBSDI Blockchain Framework** is a standardized, production-ready Python package designed for undergraduate coursework and hands-on laboratory instruction under the **Sindh Blockchain Skills Development Initiative (SBSDI)** at **Mehran University of Engineering & Technology (MUET), Jamshoro**.
+The **MUET SBSDI Blockchain Package** is a scalable, production-ready Python library designed for undergraduate coursework, practical laboratory experiments, and research under the **Sindh Blockchain Skills Development Initiative (SBSDI)** at **Mehran University of Engineering & Technology (MUET), Jamshoro**.
 
-### Problems Solved
-* **Zero Dependency Conflicts:** Resolves environment inconsistencies across legacy cryptography libraries by standardizing ECDSA curves (`secp256k1`) and Keccak-256 hashing.
-* **Typo-Free Reference Code:** Eliminates manual transcription errors from slide decks and lab handouts with 100% test-verified implementations.
-* **Modular Architecture:** Provides clean, reusable interfaces for learning distributed systems, consensus models, and cryptographic primitives.
+> [!IMPORTANT]
+> **Active Development Notice:** This package is currently **under active development**. Modules and interfaces are continuously updated and expanded as additional laboratory exercises and advanced blockchain components are introduced.
+
+### Key Capabilities & Highlights
+* **Zero Dependency Conflicts:** Standardizes cryptographic primitives (`secp256k1` curves and Keccak-256) into a unified, conflict-free dependency set.
+* **Modular & Scalable Design:** Easily extensible codebase organized by independent modules, allowing new algorithms and lab components to be added seamlessly.
+* **Verified Reference Implementations:** 100% automated test-passing reference implementations for distributed ledgers, peer-to-peer networks, cryptographic hashing, and consensus protocols.
 
 ---
 
@@ -39,19 +43,19 @@ pip install -e .
 ```
 
 ### Core Dependencies
-This framework automatically installs and manages the following verified dependencies:
+This package automatically installs and manages the following verified dependencies:
 * `ecdsa>=0.18` — For SECP256k1 key generation, digital signatures, and verification.
 * `pycryptodome>=3.15` — For Ethereum-compatible Keccak-256 cryptographic hashing.
 
 > [!NOTE]
-> If you have the deprecated `pycrypto` library installed, please uninstall it first using `pip uninstall pycrypto` to avoid module namespace collisions.
+> If you have the legacy `pycrypto` library installed, please uninstall it first using `pip uninstall pycrypto` to avoid namespace collisions.
 
 ---
 
-## 🔬 Curriculum & Lab Reference
+## 🔬 Practical Lab Modules & Examples
 
-### Lab 1: Blockchain Fundamentals & Proof-of-Work
-*Covers basic block data structures, SHA-256 cryptographic chaining, block tampering detection, and proof-of-work difficulty benchmarking.*
+### Module 1: Blockchain Fundamentals & Proof-of-Work
+*Covers block data structures, SHA-256 cryptographic chaining, block tampering detection, and proof-of-work difficulty benchmarking.*
 
 ```python
 from sbsdi_blockchain.lab1 import Block, Blockchain, time_mining
@@ -75,7 +79,7 @@ print(f"Mining elapsed time: {elapsed:.3f}s")
 
 ---
 
-### Lab 2: Distributed Ledgers & P2P Networks
+### Module 2: Distributed Ledgers & P2P Networks
 *Covers distributed ledger synchronization, peer-to-peer gossip broadcast, Merkle tree integration, secp256k1 wallets, transaction lifecycles, and mempools.*
 
 ```python
@@ -112,7 +116,7 @@ print(f"Chain Integrity: {bc.is_chain_valid()}")  # True
 
 ---
 
-### Lab 3: Cryptographic Foundations & Ethereum Primitives
+### Module 3: Cryptographic Foundations & Ethereum Primitives
 *Covers SHA-256 avalanche effect, Keccak-256, ECDSA keypair generation, Ethereum address derivation (0x + 40 hex chars), and Merkle SPV inclusion proofs.*
 
 ```python
@@ -152,7 +156,7 @@ print(f"SPV Proof Valid: {verify_proof(transactions[2], proof, tree.root())}")  
 
 ---
 
-### Lab 4: Consensus Mechanisms & Network Metrics
+### Module 4: Consensus Mechanisms & Network Metrics
 *Covers Proof-of-Stake (PoS), validator selection, slashing conditions, Practical Byzantine Fault Tolerance (PBFT $2f+1$ quorum), Nakamoto coefficient calculation, and sharded TPS metrics.*
 
 ```python
@@ -198,7 +202,7 @@ print(f"Sharded Network TPS (64 shards): {sharded_tps(7, 64):.1f}")
 
 ---
 
-## 🗂️ Project Directory Structure
+## 🗂️ Package Directory Structure
 
 ```text
 sbsdi_blockchain/
