@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sbsdi-blockchain"
+version = "0.1.0"
+description = "SBSDI Blockchain Course Lab Code — Lectures 2–5 (Python Labs)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["blockchain", "distributed-ledger", "cryptography", "ecdsa", "merkle-tree", "consensus", "education"]
+
+dependencies = [
+    # Used by Lab 2 (Wallet/Transaction) and Lab 3 (ECDSA key generation, signing, verification)
+    # Pinned to a compatible range: allows bug-fix updates but blocks breaking API changes
+    "ecdsa>=0.18,<1.0",
+
+    # Used by Lab 3 (Keccak-256 / Ethereum address derivation)
+    # NOTE: This is pycryptodome, NOT the old/abandoned pycrypto package.
+    # Both install as `from Crypto.Hash import keccak` — but only pycryptodome works correctly.
+    "pycryptodome>=3.15,<4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/sbsdi/blockchain-framework"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sbsdi_blockchain*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
