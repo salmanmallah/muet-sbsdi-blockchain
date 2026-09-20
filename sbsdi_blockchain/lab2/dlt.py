@@ -9,6 +9,8 @@ Dependencies: stdlib only
 Simulates a naive network of nodes, each holding their own local copy
 of a ledger, with broadcast, offline/online state, and eventual consistency.
 """
+from __future__ import annotations
+
 
 
 class Ledger:

@@ -6,6 +6,8 @@ Lab 3 (Lecture 4) — Section 1: SHA-256 Basics + Avalanche Effect.
 Source: 4_dis_blockchain_crypto_foundations_handout.docx, sha256_basics.py
 Dependencies: stdlib only (hashlib)
 """
+from __future__ import annotations
+
 
 import hashlib
 

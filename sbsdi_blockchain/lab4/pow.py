@@ -6,6 +6,8 @@ Lab 4 (Lecture 5) — Lab 1: Proof-of-Work Blockchain.
 Source: 5_Dis_Blockchain_Consensus_Mechanisms_Handou.docx, lab1_pow.py
 Dependencies: stdlib only (hashlib, json, time)
 """
+from __future__ import annotations
+
 
 import hashlib
 import json

@@ -8,6 +8,8 @@ Source: 4_dis_blockchain_crypto_foundations_handout.docx
         tamper_test.py      (Section 7)
 Dependencies: ecdsa>=0.18, stdlib (hashlib)
 """
+from __future__ import annotations
+
 
 import hashlib
 

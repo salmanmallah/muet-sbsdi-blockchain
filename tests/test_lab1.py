@@ -1,6 +1,8 @@
 """
 Tests for Module 1 (Blockchain Fundamentals & Proof-of-Work).
 """
+from __future__ import annotations
+
 import pytest
 from sbsdi_blockchain.lab1 import Block, Blockchain, time_mining
 

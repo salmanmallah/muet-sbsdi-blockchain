@@ -1,6 +1,8 @@
 """
 Tests for Module 2 (Distributed Ledgers & P2P Networks).
 """
+from __future__ import annotations
+
 import pytest
 from sbsdi_blockchain.lab2 import (
     DistributedLedgerNetwork,

@@ -21,6 +21,8 @@ The public-facing API (Wallet.address(), Wallet.private_key,
 Wallet.public_key) is identical in behaviour. Only the internal
 implementation changed.
 """
+from __future__ import annotations
+
 
 import hashlib
 

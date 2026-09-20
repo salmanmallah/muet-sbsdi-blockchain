@@ -4,6 +4,8 @@ sbsdi_blockchain.core.hashing
 Shared cryptographic hashing utilities used across all labs.
 No external dependencies — pure Python stdlib.
 """
+from __future__ import annotations
+
 
 import hashlib
 

@@ -1,6 +1,8 @@
 """
 Tests for Module 3 (Cryptographic Foundations & Ethereum Primitives).
 """
+from __future__ import annotations
+
 import pytest
 from sbsdi_blockchain.lab3 import (
     sha256,

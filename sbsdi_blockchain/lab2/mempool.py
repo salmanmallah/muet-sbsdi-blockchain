@@ -9,6 +9,8 @@ Dependencies: stdlib only (uses Transaction from same lab)
 The mempool validates incoming transactions (signature, balance, self-send)
 and sorts them by fee (highest fee first) to model miner incentives.
 """
+from __future__ import annotations
+
 
 from .transaction import Transaction
 

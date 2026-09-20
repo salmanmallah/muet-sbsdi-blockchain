@@ -35,6 +35,8 @@ Exports:
         sharded_tps             — effective TPS with sharding
         pbft_message_count      — PBFT O(n²) message count
 """
+from __future__ import annotations
+
 
 from .pow import Block, mine_block, PoWBlockchain
 from .pos import Validator, select_validator, propose_block, slash

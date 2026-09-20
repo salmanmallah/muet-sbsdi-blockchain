@@ -6,6 +6,8 @@ Lab 2 (Lecture 3) — Module 5: Blockchain (mempool + mining + validation).
 Source: 3-dis_blockchain_lab_handout.docx, blockchain_lab.py — Module 5
 Dependencies: stdlib only (uses Block, Mempool, Transaction from same lab)
 """
+from __future__ import annotations
+
 
 from .block import Block
 from .mempool import Mempool, get_balance

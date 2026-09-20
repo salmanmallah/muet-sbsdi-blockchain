@@ -6,6 +6,8 @@ Lab 3 (Lecture 4) — Section 3: Proof-of-Work.
 Source: 4_dis_blockchain_crypto_foundations_handout.docx, proof_of_work.py
 Dependencies: stdlib only (hashlib)
 """
+from __future__ import annotations
+
 
 import hashlib
 

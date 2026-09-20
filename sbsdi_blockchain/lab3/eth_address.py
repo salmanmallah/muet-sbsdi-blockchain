@@ -10,6 +10,8 @@ Ethereum addresses are derived as: Keccak-256(uncompressed_public_key)[-20 bytes
 The public key used is the raw 64-byte uncompressed key (x || y),
 WITHOUT the 0x04 prefix byte.
 """
+from __future__ import annotations
+
 
 
 def derive_eth_address(public_key) -> str:

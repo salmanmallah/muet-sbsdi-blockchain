@@ -6,6 +6,8 @@ Lab 1 (Lecture 2) — Step 1: Define the Block Class.
 Source: 2_Dis_Blockchain_Intro_Lab.docx, Step 1.2
 Dependencies: stdlib only (hashlib, json, time)
 """
+from __future__ import annotations
+
 
 import hashlib
 import json

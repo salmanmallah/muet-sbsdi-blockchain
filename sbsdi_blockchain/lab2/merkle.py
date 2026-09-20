@@ -9,6 +9,8 @@ Dependencies: stdlib only (hashlib, json)
 The Merkle root summarises all transactions in a block into a single hash.
 Tampering with any transaction changes the root, making the block's hash invalid.
 """
+from __future__ import annotations
+
 
 import hashlib
 import json

@@ -11,6 +11,8 @@ Dependencies: stdlib only (hashlib)
 Uses Bitcoin's DOUBLE SHA-256 (sha256d) — not the single-SHA256 used in Lab 2.
 sha256d(x) = SHA-256(SHA-256(x))
 """
+from __future__ import annotations
+
 
 import hashlib
 

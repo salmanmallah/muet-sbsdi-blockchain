@@ -29,6 +29,8 @@ Exports:
     Capstone:
         ConsensusNode           — PeerNode + Blockchain + longest-chain gossip
 """
+from __future__ import annotations
+
 
 from .dlt import DistributedLedgerNetwork, Ledger
 from .p2p import PeerNode, build_ring

@@ -12,6 +12,8 @@ Provides analytical models for:
 - Sharding TPS improvement
 - PBFT message complexity (O(n²))
 """
+from __future__ import annotations
+
 
 
 def calculate_tps(block_size_bytes: int, avg_tx_size_bytes: int, block_time_seconds: float) -> float:

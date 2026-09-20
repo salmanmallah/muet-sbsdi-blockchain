@@ -12,6 +12,8 @@ Exports:
     time_mining    — time how long mining takes at a given difficulty
     compare_difficulties — compare multiple difficulties
 """
+from __future__ import annotations
+
 
 from .block import Block
 from .blockchain import Blockchain

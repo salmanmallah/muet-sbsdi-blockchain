@@ -34,6 +34,8 @@ Exports:
         capstone.Block          — full block: MerkleTree + PoW
         capstone.build_signed_block — sign a tx and build a mined block
 """
+from __future__ import annotations
+
 
 from .sha256_basics import sha256, avalanche_demo
 from .keccak256 import keccak256

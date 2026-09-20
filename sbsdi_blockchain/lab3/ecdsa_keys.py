@@ -6,6 +6,8 @@ Lab 3 (Lecture 4) — Section 4: ECDSA Key Generation.
 Source: 4_dis_blockchain_crypto_foundations_handout.docx, key_generation.py
 Dependencies: ecdsa>=0.18  (pip install ecdsa)
 """
+from __future__ import annotations
+
 
 from ecdsa import SECP256k1, SigningKey
 

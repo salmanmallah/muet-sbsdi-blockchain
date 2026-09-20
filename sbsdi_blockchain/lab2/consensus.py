@@ -10,6 +10,8 @@ ConsensusNode extends PeerNode with a local Blockchain. When a node
 receives a block announcement, it adopts the longest valid chain (Nakamoto
 consensus) and relays the announcement to further peers via gossip.
 """
+from __future__ import annotations
+
 
 from .blockchain import Blockchain
 from .p2p import PeerNode

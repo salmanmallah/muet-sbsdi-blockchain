@@ -10,6 +10,8 @@ Demonstrates how a message propagates across a ring topology where each
 node is only directly connected to two neighbours, yet every node receives
 the message via gossip relaying.
 """
+from __future__ import annotations
+
 
 import random
 

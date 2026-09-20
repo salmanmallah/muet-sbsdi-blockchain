@@ -10,6 +10,8 @@ PBFT guarantees consensus as long as fewer than 1/3 of nodes are Byzantine.
 With n total nodes, f = (n-1)//3 is the maximum tolerable faulty nodes.
 A quorum requires 2f+1 matching votes.
 """
+from __future__ import annotations
+
 
 import random
 from collections import Counter

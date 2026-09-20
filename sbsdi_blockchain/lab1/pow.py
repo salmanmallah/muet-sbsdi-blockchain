@@ -6,6 +6,8 @@ Lab 1 (Lecture 2) — Step 3: Proof-of-Work mining utilities.
 Source: 2_Dis_Blockchain_Intro_Lab.docx, Step 3.3
 Dependencies: stdlib only (time)
 """
+from __future__ import annotations
+
 
 import time
 

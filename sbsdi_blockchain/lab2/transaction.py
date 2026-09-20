@@ -10,6 +10,8 @@ A Transaction moves coins from a Wallet (sender) to an address (receiver).
 It must be signed with the sender's private key before being submitted to
 the network. Miners verify the signature before including it in a block.
 """
+from __future__ import annotations
+
 
 import hashlib
 import time

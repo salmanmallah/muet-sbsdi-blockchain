@@ -1,6 +1,8 @@
 """
 Tests for Module 4 (Consensus Mechanisms & Network Metrics).
 """
+from __future__ import annotations
+
 import pytest
 from sbsdi_blockchain.lab4 import (
     Block,

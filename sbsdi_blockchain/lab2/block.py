@@ -10,6 +10,8 @@ This Block stores a *list of transactions* (not a raw string like Lab 1).
 The Merkle root of all transactions is included in the hash, so tampering
 with any transaction inside the block changes the block hash.
 """
+from __future__ import annotations
+
 
 import hashlib
 import json

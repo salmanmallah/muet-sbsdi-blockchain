@@ -10,6 +10,8 @@ The Nakamoto Coefficient measures how many entities need to collude to
 control more than 50% of a network's resources (hash power, stake, etc.).
 A lower coefficient = less decentralised.
 """
+from __future__ import annotations
+
 
 
 def nakamoto_coefficient(shares: list[float]) -> int:

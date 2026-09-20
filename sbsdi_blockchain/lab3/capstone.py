@@ -12,6 +12,8 @@ Combines all Lab 3 concepts into a minimal but complete blockchain:
 - Proof-of-Work block mining
 - Chain linking via previous_hash
 """
+from __future__ import annotations
+
 
 import hashlib
 import time

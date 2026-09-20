@@ -6,6 +6,8 @@ Lab 1 (Lecture 2) — Steps 2 & 4: Blockchain Class + Validation.
 Source: 2_Dis_Blockchain_Intro_Lab.docx, Steps 2.1 and 4.1
 Dependencies: stdlib only
 """
+from __future__ import annotations
+
 
 import time
 from .block import Block

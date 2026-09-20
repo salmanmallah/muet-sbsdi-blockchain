@@ -6,6 +6,8 @@ Lab 4 (Lecture 5) — Lab 2: Proof-of-Stake.
 Source: 5_Dis_Blockchain_Consensus_Mechanisms_Handou.docx, lab2_pos.py
 Dependencies: stdlib only (random)
 """
+from __future__ import annotations
+
 
 import random
 

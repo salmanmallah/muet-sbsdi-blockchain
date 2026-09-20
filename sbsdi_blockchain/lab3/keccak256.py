@@ -11,6 +11,8 @@ Both expose `from Crypto.Hash import keccak` but only pycryptodome
 implements Keccak-256 correctly. If you have pycrypto installed,
 uninstall it first: pip uninstall pycrypto
 """
+from __future__ import annotations
+
 
 
 def keccak256(data: bytes) -> str:
