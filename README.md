@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="assets/sindh_hec_logo.svg" alt="Sindh Higher Education Commission Logo" width="120" height="120">
+  <img src="assets/sindh_hec_logo.svg?v=2" alt="Sindh Higher Education Commission Logo" width="120" height="120">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/muet_logo.svg" alt="MUET Jamshoro Logo" width="120" height="120">
+  <img src="assets/muet_logo.svg?v=2" alt="MUET Jamshoro Logo" width="120" height="120">
 </p>
 
 <h1 align="center">⛓️ MUET SBSDI Blockchain Package</h1>
