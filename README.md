@@ -1,18 +1,24 @@
-# ⛓️ MUET SBSDI Blockchain Package
+<p align="center">
+  <img src="assets/muet_logo.svg" alt="MUET Jamshoro Logo" width="130" height="130">
+</p>
 
-**Official Scalable Python Blockchain Package & Laboratory Implementations**  
-*Mehran University of Engineering & Technology (MUET), Jamshoro*  
-*Sindh Blockchain Skills Development Initiative (SBSDI) — Sindh Higher Education Commission (SHEC)*
+<h1 align="center">⛓️ MUET SBSDI Blockchain Package</h1>
 
----
+<p align="center">
+  <strong>Official Scalable Python Blockchain Reference Package & Laboratory Implementations</strong><br>
+  <em>Mehran University of Engineering & Technology (MUET), Jamshoro</em><br>
+  <em>Sindh Blockchain Skills Development Initiative (SBSDI) — Sindh Higher Education Commission (SHEC)</em>
+</p>
 
-[![University](https://img.shields.io/badge/Institution-MUET%20Jamshoro-0056b3.svg)](https://www.muet.edu.pk/)
-[![Initiative](https://img.shields.io/badge/Program-SBSDI%20Sindh-28a745.svg)](#)
-[![Status](https://img.shields.io/badge/Status-Under%20Active%20Development-orange.svg)](#)
-[![PyPI](https://img.shields.io/badge/PyPI-Publishing%20Soon-yellow.svg)](#)
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI Test Suite](https://github.com/salmanmallah/muet-sbsdi-blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/salmanmallah/muet-sbsdi-blockchain/actions)
+<p align="center">
+  <a href="https://www.muet.edu.pk/"><img src="https://img.shields.io/badge/Institution-MUET%20Jamshoro-0056b3.svg" alt="Institution"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Program-SBSDI%20Sindh-28a745.svg" alt="Program"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Status-Under%20Active%20Development-orange.svg" alt="Status"></a>
+  <a href="#"><img src="https://img.shields.io/badge/PyPI-Publishing%20Soon-yellow.svg" alt="PyPI"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+  <a href="https://github.com/salmanmallah/muet-sbsdi-blockchain/actions"><img src="https://github.com/salmanmallah/muet-sbsdi-blockchain/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+</p>
 
 ---
 
